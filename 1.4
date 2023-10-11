@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+
+	int Weight;
+	int s_Height;
+	float m_Height;
+	float BodyMassIndex;
+
+	cout << "Enter your height in centimeters " << endl;
+	cin >> s_Height;
+
+	cout << "Enter your weight in kg " << endl;
+	cin >> Weight;
+
+	m_Height = s_Height / 100.0;
+	BodyMassIndex = Weight / (m_Height * m_Height);
+	cout << "Your body mass index = " << BodyMassIndex << endl;
+
+	return 0;
+}
